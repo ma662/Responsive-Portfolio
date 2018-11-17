@@ -23,6 +23,12 @@ div.p_wrapper {
     border-width: 2px;
     */
 }
+@media only screen and (max-width: 640px) {
+div.p_wrapper {
+        margin-left: 8em;
+    }
+}
+
 
 div.overlay {
     /* Overlay Container */
@@ -45,11 +51,28 @@ div.overlay {
     transition: letter-spacing 0.3s;
 }
 
+@media only screen and (max-width: 640px) {
+    div.content {
+        margin-top: 7em;
+        background-color: rgba(245, 245, 245, 0.432);
+        width: 560px;
+        height: 140em;
+    }
+}
+
 /*_Portfolio Content_*/
 .column {
     float: left;
     width: 28%;
     padding: 23px;
+}
+
+@media only screen and (max-width: 640px) {
+    .column {
+        float: left;
+        width: 100%;
+        padding: 3em;
+    }
 }
 
 .row:after {

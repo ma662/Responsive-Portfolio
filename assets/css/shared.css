@@ -24,7 +24,8 @@ header {
 
 @media only screen and (max-width: 640px) {
     header {
-        width: 640px;
+        /* width: 640px; */
+        width: 100%;
         margin-top: 0;
         position: static;
     }
@@ -53,6 +54,7 @@ div.name {
     div.name {
         width: 640px;
         /* margin-left: 50%; */
+        /* width: 100%; */
         text-align: center;
     }
 }
@@ -105,6 +107,9 @@ h1.head {
 
     /* transition: opacity 0.2s; */
 }
+/* @media only screen and (max-width: 640px) {
+    text-align: center;
+} */
 
 h1.swap {
     color: white;
