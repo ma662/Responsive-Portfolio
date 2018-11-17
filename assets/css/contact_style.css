@@ -1,0 +1,52 @@
+/*========================================>
+Contact Page 
+==========================================>*/
+div.contact {
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    padding: 30px;
+}
+
+input, textarea {
+    color: gray;
+    width: 99.5%;
+    height: 2.3em;
+    margin-top: 1em;
+    resize: none;
+}
+
+form {
+    margin-top: 1em;
+    height: 30em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 1.2em;
+}
+
+.button{ 
+    margin-top: 0.0em;
+    width: 6em;
+
+    color: white;
+    background-color: teal;
+    border-style: solid;
+}
+
+input.button:hover{
+    /* Submit Button*/
+    background-color: rgba(44, 20, 1, 0.548);
+}
+
+div.contact_bg_char {
+    top: 32.5em;
+
+
+    position: fixed;
+    right: -9em;
+
+    z-index: -5;
+    margin-left: 62em;
+    margin-right: auto;
+    margin-top: -30em;
+}

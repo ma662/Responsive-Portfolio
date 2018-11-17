@@ -1,0 +1,163 @@
+/*========================================>
+Portfolio Page  
+==========================================>*/
+div.portfolio {
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    padding: 30px;
+
+    height: 70em;
+}
+
+div.p_wrapper {
+    /* Box Container */
+    padding-top: 0px;
+    margin-top: 2.5em;
+    width: 100%;
+    height: 87%;
+    
+     /* Debugging 
+    border-color: red;
+    border-style: dotted;
+    border-width: 2px;
+    */
+}
+
+div.overlay {
+    /* Overlay Container */
+    margin-top: 11em;
+
+    background-color: teal;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+
+    width: 100%;
+    height: 4em;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: letter-spacing 0.3s;
+}
+
+/*_Portfolio Content_*/
+.column {
+    float: left;
+    width: 28%;
+    padding: 23px;
+}
+
+.row:after {
+    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+img.box {
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.2s;
+}
+
+img.decor {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    left: 1.5em;
+    right: auto;
+    width: 220px;
+}
+
+.box {
+    overflow: hidden;
+
+    float: left;
+    position: relative; 
+    
+    height: 200px;
+    width: 250px;
+    
+    letter-spacing: 2px;
+    transition: background-color 0.15s;
+    
+    /* Debugging 
+    border: solid;
+    border-width: 1px;
+    border-color: brown;
+    */
+   
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    
+    border-right: solid;
+    border-width: 0.7px;
+    border-color: lightgray;
+}
+
+.box:hover>div.overlay>h3 {
+    /* Give These Properties to h3 Upon Hover */
+    color: black;
+}
+
+.box:hover>div.overlay {
+    /* Give These Properties to Overlay Upon Hover */
+    color: brown;
+    letter-spacing: 6px;
+    
+    text-decoration: line-through;
+    
+    background-color: rgba(255, 187, 249, 0.65);
+}
+
+.box:hover ~ h4 { 
+    /* Works because they are siblings */
+    opacity: 1;
+}
+
+.box:hover>img.box {
+    transform: scale(1.02);
+}
+
+h4.port {
+    /* Descriptions under pics during hover */
+    opacity: 0;
+    color: rgb(70, 0, 35);
+
+    float: right;
+    text-align: right;
+    font-family: monospace;
+    margin-bottom: -5em;
+}
+
+a.port {
+    text-decoration: none;
+    color: white;
+    
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+h3.port {
+    /* Overlay Font */
+    margin-left: 9px;
+    margin-right: auto;
+    
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
