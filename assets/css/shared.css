@@ -22,7 +22,7 @@ header {
     border-bottom-width: 1px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
     header {
         margin-top: 0;
         position: static;
@@ -48,7 +48,7 @@ div.name {
     /* Name Box Transition Time */
     transition: background-color 0ms;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
     div.name {
         width: 65%;
         text-align: center;
@@ -79,7 +79,7 @@ div.nav{
     width: 21em;
     height: 4em;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
     div.nav {
         /* Navigation div */
         float: left;
@@ -114,7 +114,7 @@ h1.swap {
     transition: opacity 0ms;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
     h1.swap {
     margin-left: 0px;
     }
@@ -184,7 +184,7 @@ div.content {
     margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
     div.content {
         background-color: rgba(245, 245, 245, 0.432);
         width: 560px;
@@ -210,7 +210,7 @@ div.bg_char {
     */
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 600px) {
     div.bg_char {
         right: -6.5em;
         opacity: 0.55;
