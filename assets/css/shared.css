@@ -9,8 +9,8 @@ body {
 H e a d e r 
 - - - - - - - >*/
 header {
-    position: fixed;
-    margin-top: -6em;
+    position: static;
+    margin-top: 0em;
     padding: 0 auto;
 
     width: 100%;
@@ -22,8 +22,9 @@ header {
     border-bottom-width: 1px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     header {
+        width: 640px;
         margin-top: 0;
         position: static;
     }
@@ -48,9 +49,10 @@ div.name {
     /* Name Box Transition Time */
     transition: background-color 0ms;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     div.name {
-        width: 65%;
+        width: 640px;
+        /* margin-left: 50%; */
         text-align: center;
     }
 }
@@ -79,7 +81,7 @@ div.nav{
     width: 21em;
     height: 4em;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     div.nav {
         /* Navigation div */
         float: left;
@@ -114,7 +116,7 @@ h1.swap {
     transition: opacity 0ms;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     h1.swap {
     margin-left: 0px;
     }
@@ -180,12 +182,13 @@ div.content {
     margin-left: auto;
     margin-right: auto;
     /* margin-top: 3em; */
-    margin-top: 7.5em;
+    margin-top: 2em;
     margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     div.content {
+        margin-top: 7em;
         background-color: rgba(245, 245, 245, 0.432);
         width: 560px;
     }
@@ -210,8 +213,9 @@ div.bg_char {
     */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     div.bg_char {
+        top: 30.5em;
         right: -6.5em;
         opacity: 0.55;
     }
