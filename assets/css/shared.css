@@ -2,16 +2,16 @@
 Shared Content - RESPONSIVE
 ==========================================>*/
 body {
-    background-color: rgb(175, 255, 173); 
+    background-color: rgb(163, 241, 205); 
     margin: 0 auto;
 }
 /*- - - - - - >
 H e a d e r 
 - - - - - - - >*/
 header {
-    position: static;
-    margin-top: 0em;
-    padding: 0 auto;
+    /* Header Container */
+    /* display: flex; */
+    position: sticky;
 
     width: 100%;
     height: 4em;
@@ -22,25 +22,10 @@ header {
     border-bottom-width: 1px;
 }
 
-@media only screen and (max-width: 640px) {
-    header {
-        /* width: 640px; */
-        width: 100%;
-        margin-top: 0;
-        position: static;
-    }
-}
-
-
-div.header {
-    width: 960px;
-    margin-left: auto ;
-    margin-right: auto ;
-}
-
 div.name {
     /* Name Box */
     float: left;
+    margin-left: 2.5%;
     background-color: teal;
     width: 10em;
     height: 4em;
@@ -48,16 +33,17 @@ div.name {
     letter-spacing: 1px;
 
     /* Name Box Transition Time */
-    transition: background-color 0ms;
+    transition: background-color 1ms;
 }
-@media only screen and (max-width: 640px) {
+
+/* @media only screen and (max-width: 640px) {
     div.name {
         width: 640px;
         /* margin-left: 50%; */
-        /* width: 100%; */
+        /* width: 100%; 
         text-align: center;
     }
-}
+} */
 
 div.name:hover {
     /* Name Redirect */
@@ -83,20 +69,23 @@ div.nav{
     width: 21em;
     height: 4em;
 }
+/* 
 @media only screen and (max-width: 640px) {
     div.nav {
-        /* Navigation div */
+        /* Navigation div 
         float: left;
+        display: flex;
+
 
         margin-left: 0;
-        padding-left: 9.5em;
+        /* padding-left: 9.5em; 
         width: 100%;
-        /* text-align: center; */
-        /* align-items: center; */
+        /* text-align: center; 
+        /* align-items: center; 
         height: 4em;
         background-color: white;
     }
-}
+} */
 
 h1.head { 
     /* Header Name Text */
@@ -107,29 +96,21 @@ h1.head {
 
     /* transition: opacity 0.2s; */
 }
-/* @media only screen and (max-width: 640px) {
-    text-align: center;
-} */
 
 h1.swap {
+    /* Japanese Swap Text */
     color: white;
     font-size: 1.5em;
     margin-top: -50px;
-    margin-left: 30px;
+
+    text-align: center;
 
     opacity: 0;
     transition: opacity 0ms;
 }
 
-@media only screen and (max-width: 640px) {
-    h1.swap {
-    margin-left: 0px;
-    }
-
-}
-
 p.swap {
-
+    /* Ma - ri - zu Text */
     margin-top: -1.5em;
 
     text-align: center;
@@ -147,7 +128,6 @@ a.nav {
     color: darkgray;
     text-align: center;
     text-decoration: none;
-    vertical-align: middle;
     line-height: 4em;  
 
     padding: 24px;
@@ -155,6 +135,12 @@ a.nav {
     /* Name Box Transition Time */
     transition: background-color 0.1s;
 }
+
+ @media only screen and (max-width: 640px) {
+    h1.swap {
+        text-align: center;
+    }
+} 
 
 a.nav:hover {
     background-color: rgb(151, 5, 5);
@@ -166,6 +152,39 @@ p.nav {
     color: lightgray;
     display: inline-block;
 }
+
+/* Header Media Query 640px */
+@media only screen and (max-width: 640px) {
+    header {
+        position: static;
+        padding: 0;
+        margin: 0;
+    }
+
+    div.name {
+        float: left;
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    div.nav {
+        background-color: white;
+
+        float: left;
+        width: 100%;
+    }
+
+    div.nav-link-wrapper {
+        text-align: center;
+    }
+
+   
+}
+/* Header Media Query 768px */
+/* Header Media Query 980px */
+
 
 /*- - - - - - - - - - - - - ->
 P a g e   C o n t e n t
@@ -179,7 +198,7 @@ h1.content {
 }
 
 div.content {
-    width: 960px;
+    width: 95%;
     font-size: 0.8em;
     background: rgba(255, 255, 255, 0.65);
     opacity: 0.95;
@@ -192,12 +211,19 @@ div.content {
 }
 
 @media only screen and (max-width: 640px) {
+
+    div.content {
+        margin-top: 15%;
+    }
+
+}
+/* @media only screen and (max-width: 640px) {
     div.content {
         margin-top: 7em;
         background-color: rgba(245, 245, 245, 0.432);
         width: 560px;
     }
-}
+} */
 
 div.bg_char {
     /* position: absolute; */
@@ -218,13 +244,13 @@ div.bg_char {
     */
 }
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
     div.bg_char {
         top: 30.5em;
         right: -6.5em;
         opacity: 0.55;
     }
-}
+} */
 
 /*- - - - - - - - - >
 F o o t e r
