@@ -9,9 +9,9 @@ body.bio {
 }
 
 div.bio {
-    border-color: lightgray;
+    /* border-color: lightgray;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1px; */
     padding: 30px;
 }
 
