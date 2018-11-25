@@ -200,7 +200,8 @@ div.content {
     
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
+    /* margin-top: 8%; */
+    margin-top: 7em;
 }
 
 div.bg_char {

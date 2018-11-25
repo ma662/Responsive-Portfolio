@@ -1,6 +1,10 @@
 /*========================================>
 Contact Page - RESPONSIVE
 ==========================================>*/
+div.content {
+    width: 960px;
+}
+
 div.contact {
     /* border-color: lightgray;
     border-style: solid;
@@ -11,7 +15,7 @@ div.contact {
 input, textarea {
     color: gray;
     width: 99.5%;
-    height: 2.3em;
+    height: 4.5%;
     margin-top: 1em;
     resize: none;
 }
@@ -50,3 +54,19 @@ div.contact_bg_char {
     margin-right: auto;
     margin-top: -30em;
 }
+
+/* Contact Media Query 980px */
+@media only screen and (max-width: 980px) {
+    div.content {
+        width: 550px;
+        margin-left: 2.5%;
+    }
+}
+
+/* Contact Media Query 768px */
+@media only screen and (max-width: 768px) {
+    div.content {
+        margin-top: 12.5%;
+    }
+}
+

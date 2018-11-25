@@ -1,6 +1,11 @@
 /*========================================>
 Bio Page - RESPONSIVE
 ==========================================>*/
+div.content {
+    width: 960px;
+    margin-top: 7em;
+}
+
 body.bio {
     overflow: auto;
 
@@ -41,6 +46,34 @@ div.cat_wrap {
     opacity: 0.92;
 }
 
+
+a.bio-image:hover>#bio-image {
+    opacity: 1;
+}
+
+p.bio {
+    font-family: Helvetica, sans-serif;
+    color: grey;
+    line-height: 25px;
+}
+p.special {
+    margin-top: 1px;
+
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 100, 195);
+
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+/* Bio Media Query 980px */
+@media only screen and (max-width: 980px) {
+    div.content {
+        width: 550px;
+        margin-left: 2.5%;
+    }
+}
+
 @media only screen and (max-width: 640px) {
     #bio-image {
         float: left;
@@ -60,23 +93,4 @@ div.cat_wrap {
     div.content {
         height: 97.2em;
     } 
-}
-
-a.bio-image:hover>#bio-image {
-    opacity: 1;
-}
-
-p.bio {
-    font-family: Helvetica, sans-serif;
-    color: grey;
-    line-height: 25px;
-}
-p.special {
-    margin-top: 1px;
-
-    font-family: Helvetica, sans-serif;
-    color: rgb(255, 100, 195);
-
-    text-align: center;
-    letter-spacing: 0.2em;
 }
