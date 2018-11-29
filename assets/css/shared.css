@@ -2,7 +2,7 @@
 Shared Content - RESPONSIVE
 ==========================================>*/
 body {
-    background-color: rgb(163, 241, 205); 
+    background-color: rgb(196, 255, 227); 
     margin: 0 auto;
     padding: 0;
 }
@@ -27,7 +27,6 @@ header {
 div.name {
     /* Name Box */
     float: left;
-    margin-left: 2.5%;
     background-color: teal;
     width: 10em;
     height: 4em;
@@ -57,13 +56,13 @@ div.name:hover>p.swap {
 div.nav{
     /* Navigation div */
     float: right;
-
+    margin-right: -1em;
     width: 21em;
     height: 4em;
 }
 
 div.header{
-    width: 990px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
