@@ -250,7 +250,7 @@ div.bg_char {
 /* Page Content Media Query 640px */
 @media only screen and (max-width: 640px) {
     div.content {
-        margin-top: 15%;
+        margin-top: 7em;
         margin-left: auto;
         margin-right: auto;
     }
@@ -260,7 +260,7 @@ div.bg_char {
 /* Page Content Media Query 768px */
 @media only screen and (max-width: 768px) {
     div.content {
-        margin-top: 15%;
+        margin-top: 7em;
         margin-left: auto;
         margin-right: auto;
     }
@@ -270,7 +270,7 @@ div.bg_char {
 /* Page Content Media Query 980px */
 @media only screen and (max-width: 980px) {
     div.content {
-        margin-top: 15%;
+        margin-top: 7em;
         margin-left: auto;
         margin-right: auto;
     }
