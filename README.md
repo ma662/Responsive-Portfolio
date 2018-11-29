@@ -1,3 +1,3 @@
-# Basic-Portfolio
+# Responsive-Portfolio
 
-Simple portfolio webpage constructed from scratch. I put this together only using HTML and CSS; fun project !  
+Simple responsive portfolio webpage constructed from scratch. Works on mobile and desktop using media-queries. I put this together only using HTML and CSS; fun project !  
