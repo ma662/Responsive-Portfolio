@@ -1,215 +1,224 @@
+#others {
+  /* display: flex; */
+  text-align: center;
+  font-size: 1rem;
+  /* float: right; */
+}
+
+/* #others > a {
+} */
+
 /*========================================>
 Portfolio Page - RESPONSIVE
 ==========================================>*/
 div.content {
-    width: 960px;
+  width: 960px;
 }
 
 div.portfolio {
-    padding: 30px;
+  padding: 30px;
 }
 
 div.p_wrapper {
-    /* Box Container */
-    padding-top: 0px;
-    margin-top: 2.5em;
-    width: 100%;
-    height: 87%;
-    
-     /* Debugging 
-    border-color: red;
-    border-style: dotted;
-    border-width: 2px;
-    */
+  /* Box Container */
+  padding-top: 0px;
+  margin-top: 2.5em;
+  width: 100%;
+  height: 87%;
+  
+    /* Debugging 
+  border-color: red;
+  border-style: dotted;
+  border-width: 2px;
+  */
 }
 
 div.overlay {
-    /* Overlay Container */
-    margin-top: 11em;
+  /* Overlay Container */
+  margin-top: 11em;
 
-    background-color: teal;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 3;
+  background-color: teal;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
 
-    width: 100%;
-    height: 4em;
+  width: 100%;
+  height: 4em;
 
-    text-align: center;
+  text-align: center;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    transition: letter-spacing 0.3s;
+  transition: letter-spacing 0.3s;
 }
 
 /*_Portfolio Content_*/
 .column {
-    float: left;
-    width: 252px;
-    padding-right: 5%;
-    padding-bottom: 5%;
+  float: left;
+  width: 252px;
+  padding-right: 5%;
+  padding-bottom: 5%;
 }
 
 .row:after {
-    /* Clear floats after the columns */
-    content: "";
-    display: table;
-    clear: both;
+  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
 }
 
 img.box {
-    z-index: -5;
-    transition: transform 0.2s;
+  z-index: -5;
+  transition: transform 0.2s;
 }
 
 img.decor {
-    position: relative;
+  position: relative;
 
-    margin: 0;
-    padding: 0;
-    left: 1.5em;
-    right: auto;
-    width: 220px;
+  margin: 0;
+  padding: 0;
+  left: 1.5em;
+  right: auto;
+  width: 220px;
 }
 
 .box {
-    overflow: hidden;
+  overflow: hidden;
 
-    float: left;
-    position: relative; 
-    
-    height: 200px;
-    width: 250px;
-    
-    letter-spacing: 2px;
-    transition: background-color 0.15s;
-    
-    /* Debugging 
-    border: solid;
-    border-width: 1px;
-    border-color: brown;
-   */
+  float: left;
+  position: relative; 
+
+  height: 200px;
+  width: 250px;
+
+  letter-spacing: 2px;
+  transition: background-color 0.15s;
+
+  /* Debugging 
+  border: solid;
+  border-width: 1px;
+  border-color: brown;
+  */
 }
 
 .box:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    
-    border-right: solid;
-    border-width: 0.7px;
-    border-color: lightgray;
+  background-color: rgba(255, 255, 255, 0.15);
+
+  border-right: solid;
+  border-width: 0.7px;
+  border-color: lightgray;
 }
 
 .box:hover>div.overlay>h3 {
-    /* Give These Properties to h3 Upon Hover */
-    color: black;
+  /* Give These Properties to h3 Upon Hover */
+  color: black;
 }
 
 .box:hover>div.overlay {
-    /* Give These Properties to Overlay Upon Hover */
-    color: brown;
-    letter-spacing: 6px;
-    
-    text-decoration: line-through;
-    
-    background-color: rgba(255, 187, 249, 0.65);
+  /* Give These Properties to Overlay Upon Hover */
+  color: brown;
+  letter-spacing: 6px;
+
+  text-decoration: line-through;
+  background-color: rgba(255, 187, 249, 0.65);
 }
 
 .box:hover ~ h4 { 
-    /* Works because they are siblings */
-    opacity: 1;
+  /* Works because they are siblings */
+  opacity: 1;
 }
 
 .box:hover>img.box {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 h4.port {
-    /* Descriptions under pics during hover */
-    opacity: 0;
-    color: rgb(70, 0, 35);
+  /* Descriptions under pics during hover */
+  opacity: 0;
+  color: rgb(70, 0, 35);
 
-    float: right;
-    text-align: right;
-    font-family: monospace;
-    margin-bottom: -5em;
+  float: right;
+  text-align: right;
+  font-family: monospace;
+  margin-bottom: -5em;
 }
 
 a.port {
-    text-decoration: none;
-    color: white;
-    
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+  text-decoration: none;
+  color: white;
+  
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 h3.port {
-    /* Overlay Font */
-    margin-left: 9px;
-    margin-right: auto;
-    
-    font-size: 15px;
-    color: white;
-    text-align: center;
+  /* Overlay Font */
+  margin-left: 9px;
+  margin-right: auto;
+  
+  font-size: 15px;
+  color: white;
+  text-align: center;
 }
 
 /* Profile Content Media Query 980px */
 @media only screen and (max-width: 980px) {
-    div.content {
-        width: 630px;
-        margin-left: 2.5%;
-    }
+  div.content {
+      width: 630px;
+      margin-left: 2.5%;
+  }
 }
 
 /* Profile Content Media Query 768px */
 @media only screen and (max-width: 768px) {
-    div.content {
-        width: 95%;
-        margin-left: auto;
-    }
-    div.portfolio {
-        margin-left: 7.5%;
-    }
+  div.content {
+      width: 95%;
+      margin-left: auto;
+  }
+  div.portfolio {
+      margin-left: 7.5%;
+  }
 }
 
 /* Profile Content Media Query 640px */
 @media only screen and (max-width: 640px) {
-    div.content {
-        width: 95%;
-    }
+  div.content {
+      width: 95%;
+  }
 
-    div.portfolio {
-        margin-left: 0;
-    }
+  div.portfolio {
+      margin-left: 0;
+  }
 
-    div.overlay {
-        width: inherit;
-        margin-top: 65%;
-        height: 5.5em;
-    }
+  div.overlay {
+      width: inherit;
+      margin-top: 65%;
+      height: 5.5em;
+  }
 
-    h3.port { 
-        margin-top: 5%;
-    }
+  h3.port { 
+      margin-top: 5%;
+  }
 
-    img.box {
-        width: 100%;
-        height: inherit;
-    }
+  img.box {
+      width: 100%;
+      height: inherit;
+  }
 
-    .column {
-        width: unset;
-        width: 100%;
+  .column {
+      width: unset;
+      width: 100%;
 
-        padding-bottom: 11%;
-    }
-    div.box {
-        height: unset;
-        width: 100%;
-    }
-    div #special_sage {
-        margin-left: 25%;
-    }
+      padding-bottom: 11%;
+  }
+  div.box {
+      height: unset;
+      width: 100%;
+  }
+  div #special_sage {
+      margin-left: 25%;
+  }
 }
